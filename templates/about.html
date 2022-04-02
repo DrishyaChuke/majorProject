@@ -1,0 +1,164 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+        }
+        .page{
+            height: 150vh; 
+            display: flex;
+            justify-content: center;
+            font-size: 1 em;
+            color: black;
+            margin-top: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .heading{
+            color: black;
+            font-weight: bold;
+            font-size: 2.5 em;
+            text-align: center;
+            align-items: center;
+        }
+        .wrapper {
+            padding-top: 120px;
+            margin-bottom: 60px;
+        }
+            .card-img-top {
+            box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+            }
+            .card-body{
+                text-align: center;
+                box-shadow: 0px 15px 15px -8px rgba(0,0,0,0.5)
+            }
+            .card-body h6 {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: deeppink;
+            }
+            .card-title {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 24px;
+            }
+
+            .socials a {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            border-radius: 50%;
+            margin: 0 5px;
+            }
+            .socials a i {
+            color: #fff;
+            padding: 12px 0;
+            }    
+
+            .socials a:nth-child(1) {
+            background: #3b5998;
+            }.socials a:nth-child(2) {
+            background: #ff0000;
+            }.socials a:nth-child(3) {
+            background: #007bb5;
+            }.socials a:nth-child(4) {
+            background: #ea4c89;
+            }
+
+            @media (max-width: 800px){
+                .mx-30{
+                    margin-bottom: 30px;
+                }
+            }
+    </style> 
+    <meta charset="UTF-8"> 
+    <title>About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <div class="page">
+            <div class="form-group">
+                <div class="jumbotron">
+                    <h1 class="display-4 heading bg-warning">About Our Project...</h1>
+                    <p class="lead text-center">
+                        <span class="d-block p-2 bg-dark text-white">
+                        In this we propose a way to create a change detection and Building detection model that can be used to create an application. Technique we proposed uses PCA K-means algorithm for unsupervised change detection and a model to detect building damage that occurs after a disaster. This model will help to assess the severity done by the disaster on the present infrastructure. 
+                        </span>
+                    </p>       
+                </div> 
+                <div class="jumbotron">
+                    <h1 class="display-4 heading bg-warning">Objective</h1>
+                    <p class="lead text-center">
+                        <span class="d-block p-2 bg-dark text-white">
+                            The objective of this project is to develop/implement machine learning models for change detection and feature extraction in satellite images and then serve these models to the user through a web application. There are different datasets for satellite information alongside got data from different sensors and insurance information. We are keen on completing change location investigation for every one of their territories of premium, utilizing information base/Deep Learning based calculations for recognizing the adjustments in given/chose time series data and extracting features of revenue changed over the long time will be an excellent worth value addition for water resources, urban dynamics, infrastructure monitoring, and disaster management. This is conceivable only by identification/detection of features on the fly from RS images, which are more amiable for commotion from various understood cycles in environment and information preparing calculations.
+                            For feature detection/extraction we have chosen to assess the damages occurred to buildings after a disaster. For this the model will require a pre and post disaster image.
+                            <br>Given time series tiles of Imagery / RS image (Two dates) the system should:
+                            <br>1.	Identify changes and highlight areas of change.
+                            <br>2.	Extract features that are evident from image 2 and not in image1, categorize in known categories, i.e., no damage, minor damage, major damage and destroyed.
+                            
+                        </span>
+                    </p>
+                </div>
+                    
+            </div>
+        
+        </div>
+        <div class="wrapper">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card mx-30">
+                      <img src="" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">
+        Drishya Lal Chuke</h5>
+        <h6>
+        Amity University Noida</h6>
+        <p class="card-text">
+        Email: drishyachuke98@gmail.com
+        </div>
+        </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+                    <div class="card mx-30">
+                      <img src="" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">
+        Peyush Kumar</h5>
+        <h6>
+        Amity University Noida</h6>
+        <p class="card-text">
+        Email: peyush707@gmail.com
+        </div>
+        </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+                    <div class="card mx-30">
+                      <img src="" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">
+        Prashim Arora</h5>
+        <h6>
+        Amity University Noida</h6>
+        <p class="card-text">
+        Email: prashim19@gmail.com
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </body>
+</html>
+{% endblock %}
